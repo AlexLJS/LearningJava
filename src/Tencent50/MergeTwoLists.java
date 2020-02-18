@@ -1,6 +1,6 @@
 package Tencent50;
 
-import utils.ListNode;
+import Utils.ListNode;
 
 public class MergeTwoLists {
 
@@ -8,7 +8,7 @@ public class MergeTwoLists {
         ListNode res = new ListNode(0);
         ListNode index = res;
         while (l1 != null  && l2 != null){
-            if (l1.val <= l2.val){
+            if (l1.value <= l2.value){
                 index.next = l1;
                 l1 = l1.next;
             }else {
@@ -20,7 +20,7 @@ public class MergeTwoLists {
 
         if (l1 == null && l2 != null) {
             index.next = l2;
-        }else if (l2 == null && l1 != null){
+        }else if (l1 != null){
             index.next = l1;
         }
         return res.next;

@@ -1,7 +1,10 @@
-package utils;
+package Utils;
 
 public class ListNode {
-    public int val;
+    public int value;
     public ListNode next;
-    public ListNode(int x) { val = x; }
- }
+
+    public ListNode(int value){
+        this.value = value;
+    }
+}

@@ -1,10 +1,10 @@
 package Tencent50;
 
-import utils.ListNode;
+import Utils.ListNode;
 
 public class DeleteNode {
     public void deleteNode(ListNode node) {
-        node.val = node.next.val;
+        node.value = node.next.value;
         node.next = node.next.next;
     }
 }

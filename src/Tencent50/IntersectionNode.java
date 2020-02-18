@@ -1,6 +1,6 @@
 package Tencent50;
 
-import utils.ListNode;
+import Utils.ListNode;
 
 /*
 * 相交链表  ：
