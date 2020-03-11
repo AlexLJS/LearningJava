@@ -24,7 +24,7 @@ public class CreateQueue {
             inputStack.push(element);
             return true;
         }
-        if (!outputStack.isEmpty()){
+        if (inputStack.isEmpty()){
             while (outputStack.isEmpty()){
                 inputStack.push(outputStack.pop());
             }

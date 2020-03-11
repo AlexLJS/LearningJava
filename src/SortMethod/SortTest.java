@@ -7,10 +7,11 @@ public class SortTest {
         int[] testArr = {6,0,3,4,7,2,5,8,2,1};
         //printArr(testArr);
         //BubbleSort.bubbleSort(testArr);
-        //InsertSort.insertSort(testArr);
+        //InsertSort.insertSort2(testArr);
         //MergeSort.sortB(testArr);
         //printArr(testArr);
         //QuickSort.quickSort(testArr);
+        HeapSort.heapSort(testArr);
         printArr(testArr);
     }
     // print array
