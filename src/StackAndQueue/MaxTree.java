@@ -3,10 +3,10 @@ package StackAndQueue;
 /**
  * 题目：
  * 定义二叉树的节点如下：
- * public class MaxTreeNode {
+ * public class TreeNode {
  *     public int value;
- *     public MaxTreeNode left;
- *     public MaxTreeNode right;
+ *     public TreeNode left;
+ *     public TreeNode right;
  *
  *     public MaxTreeNode(int data){
  *         this.value = data;
