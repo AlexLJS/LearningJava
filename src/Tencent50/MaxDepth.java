@@ -1,6 +1,6 @@
 package Tencent50;
 
-import utils.TreeNode;
+import Utils.TreeNode;
 
 public class MaxDepth {
     public int maxDepth(TreeNode root) {

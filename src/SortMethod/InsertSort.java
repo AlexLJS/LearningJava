@@ -15,6 +15,7 @@ public class InsertSort {
         }
     }
     // 上述插入排序过程其实是临位交换的冒泡排序，第二种插入排序
+    // 优势 ：常数项很低
     public static void insertSort2(int[] arr){
         if (arr.length <= 1) return;
 
