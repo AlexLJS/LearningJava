@@ -2,6 +2,8 @@ package BinaryTree;
 
 import Utils.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class TravelTree {
@@ -56,7 +58,7 @@ public class TravelTree {
         if (head != null){
             TreeNode temp = head;
             Stack<TreeNode> stack = new Stack<>();
-            while (stack != null || temp != null){
+            while (!stack.isEmpty() || temp != null){
                 if (temp != null){
                     stack.push(temp);
                     temp = temp.left;
@@ -95,5 +97,22 @@ public class TravelTree {
         }
         System.out.println();
     }
-    // 使用一个栈实现后续遍历
+    // 仅使用一个栈实现后续遍历 （待续）
+
+    // 层序遍历
+    // 借助 队列先进先出特性
+    public void floorPrint(TreeNode head){
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(head);
+        while (!queue.isEmpty()){
+            if (queue.peek().left != null){
+                queue.add(queue.peek().left);
+            }
+            if (queue.peek().right != null){
+                queue.add(queue.peek().right);
+            }
+            System.out.print(queue.poll().val + " ");
+        }
+        System.out.println();
+    }
 }
